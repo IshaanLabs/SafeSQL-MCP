@@ -1,0 +1,1673 @@
+2026-07-05 22:28:01 | INFO | test | test_phase1:16 | --- Testing config.py ---
+2026-07-05 22:28:02 | INFO | test | test_phase1:24 | ✓ config.py OK
+2026-07-05 22:28:02 | INFO | test | test_phase1:28 | --- Testing db.py ---
+2026-07-05 22:28:03 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:28:03 | INFO | test | test_phase1:36 |   Northwind tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 22:28:03 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:28:03 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:28:03 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:28:03 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:28:03 | INFO | test | test_phase1:47 | ✓ db.py OK
+2026-07-05 22:28:03 | INFO | test | test_phase1:51 | --- Testing state.py ---
+2026-07-05 22:28:03 | INFO | test | test_phase1:74 | ✓ state.py OK
+2026-07-05 22:28:03 | INFO | test | test_phase1:78 | --- Testing nodes/validate.py ---
+2026-07-05 22:28:03 | ERROR | test | test_phase1:171 | ✗ test_validate_node FAILED: No module named 'sqlparse'
+2026-07-05 22:28:03 | INFO | test | test_phase1:102 | --- Testing nodes/risk.py ---
+2026-07-05 22:28:03 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 22:28:03 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-05 22:28:03 | INFO | risk | risk:21 | Operation: DELETE | Risk: HIGH
+2026-07-05 22:28:03 | INFO | test | test_phase1:117 | ✓ nodes/risk.py OK
+2026-07-05 22:28:03 | INFO | test | test_phase1:121 | --- Testing nodes/error_handler.py ---
+2026-07-05 22:28:03 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: SELECT | SQL: SELECT * FROM fake_table | Error: Table not found
+2026-07-05 22:28:03 | INFO | test | test_phase1:130 | ✓ nodes/error_handler.py OK
+2026-07-05 22:28:03 | INFO | test | test_phase1:134 | --- Testing nodes/execute.py (read query) ---
+2026-07-05 22:28:03 | ERROR | test | test_phase1:171 | ✗ test_execute_node_read FAILED: No module named 'langgraph.types'
+2026-07-05 22:29:29 | INFO | test | test_phase1:16 | --- Testing config.py ---
+2026-07-05 22:29:29 | INFO | test | test_phase1:24 | ✓ config.py OK
+2026-07-05 22:29:29 | INFO | test | test_phase1:28 | --- Testing db.py ---
+2026-07-05 22:29:30 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:29:30 | INFO | test | test_phase1:36 |   Northwind tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 22:29:30 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:29:30 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:29:30 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:29:30 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:29:30 | INFO | test | test_phase1:47 | ✓ db.py OK
+2026-07-05 22:29:30 | INFO | test | test_phase1:51 | --- Testing state.py ---
+2026-07-05 22:29:30 | INFO | test | test_phase1:74 | ✓ state.py OK
+2026-07-05 22:29:30 | INFO | test | test_phase1:78 | --- Testing nodes/validate.py ---
+2026-07-05 22:29:31 | INFO | validate | validate:12 | Validating SQL: SELECT * FROM customers
+2026-07-05 22:29:31 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:29:31 | INFO | validate | validate:12 | Validating SQL: DROP TABLE customers
+2026-07-05 22:29:31 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 22:29:31 | INFO | validate | validate:12 | Validating SQL: TRUNCATE TABLE customers
+2026-07-05 22:29:31 | WARNING | validate | validate:29 | BLOCKED operation detected: TRUNCATE
+2026-07-05 22:29:31 | INFO | validate | validate:12 | Validating SQL: 
+2026-07-05 22:29:31 | ERROR | validate | validate:15 | No SQL to validate
+2026-07-05 22:29:31 | INFO | test | test_phase1:98 | ✓ nodes/validate.py OK
+2026-07-05 22:29:31 | INFO | test | test_phase1:102 | --- Testing nodes/risk.py ---
+2026-07-05 22:29:31 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 22:29:31 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-05 22:29:31 | INFO | risk | risk:21 | Operation: DELETE | Risk: HIGH
+2026-07-05 22:29:31 | INFO | test | test_phase1:117 | ✓ nodes/risk.py OK
+2026-07-05 22:29:31 | INFO | test | test_phase1:121 | --- Testing nodes/error_handler.py ---
+2026-07-05 22:29:31 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: SELECT | SQL: SELECT * FROM fake_table | Error: Table not found
+2026-07-05 22:29:31 | INFO | test | test_phase1:130 | ✓ nodes/error_handler.py OK
+2026-07-05 22:29:31 | INFO | test | test_phase1:134 | --- Testing nodes/execute.py (read query) ---
+2026-07-05 22:29:35 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:29:35 | INFO | execute | execute:56 | Executing SQL: SELECT COUNT(*) FROM customers
+2026-07-05 22:29:36 | INFO | execute | execute:69 | Execution complete in 4ms
+2026-07-05 22:29:36 | INFO | test | test_phase1:144 |   Query result: [(122,)]
+2026-07-05 22:29:36 | INFO | test | test_phase1:145 | ✓ nodes/execute.py OK
+2026-07-05 22:36:59 | INFO | test_llm | test_llm:15 | --- Testing classify node ---
+2026-07-05 22:37:19 | INFO | classify | classify:20 | Classifying question: Show me all customers from Germany
+2026-07-05 22:37:22 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 22:37:22 | INFO | classify | classify:20 | Classifying question: Update the price of product 5 to 25.00
+2026-07-05 22:37:22 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-05 22:37:22 | INFO | classify | classify:20 | Classifying question: Remove all orders from 2020
+2026-07-05 22:37:22 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-05 22:37:22 | INFO | test_llm | test_llm:33 | ✓ classify node OK
+2026-07-05 22:37:22 | INFO | test_llm | test_llm:37 | --- Testing generate_sql node ---
+2026-07-05 22:37:23 | INFO | generate_sql | generate_sql:20 | Generating SQL for: How many customers are there?
+2026-07-05 22:37:23 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:37:24 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT COUNT(*) FROM customers;
+2026-07-05 22:37:24 | INFO | test_llm | test_llm:50 | ✓ generate_sql node OK
+2026-07-05 22:37:24 | INFO | test_llm | test_llm:54 | --- Testing summarize node ---
+2026-07-05 22:37:24 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:37:25 | INFO | summarize | summarize:37 | Summary generated: There are 122 customers. That's quite a good number of customers! If you need to know more about any...
+2026-07-05 22:37:25 | INFO | test_llm | test_llm:69 | ✓ summarize node OK
+2026-07-05 22:37:25 | INFO | test_llm | test_llm:73 | --- Testing full READ flow (classify → generate → execute → summarize) ---
+2026-07-05 22:37:25 | INFO | classify | classify:20 | Classifying question: Show me top 5 customers by name
+2026-07-05 22:37:25 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 22:37:25 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Show me top 5 customers by name
+2026-07-05 22:37:25 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:37:26 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT customerName FROM customers ORDER BY customerName LIMIT 5
+2026-07-05 22:37:26 | INFO | validate | validate:12 | Validating SQL: SELECT customerName FROM customers ORDER BY customerName LIMIT 5
+2026-07-05 22:37:26 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:37:26 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 22:37:26 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:37:26 | INFO | execute | execute:56 | Executing SQL: SELECT customerName FROM customers ORDER BY customerName LIMIT 5
+2026-07-05 22:37:26 | INFO | execute | execute:69 | Execution complete in 4ms
+2026-07-05 22:37:26 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:37:27 | INFO | summarize | summarize:37 | Summary generated: Sure! The top 5 customers by name are:
+
+1. ANG Resellers
+2. AV Stores, Co.
+3. Alpha Cognac
+4. Americ...
+2026-07-05 22:37:27 | INFO | test_llm | test_llm:107 | ✓ Full READ flow OK
+2026-07-05 22:39:39 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:39:39 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:39:39 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:39:39 | INFO | test_tools | test_phase3:19 | --- Testing tools/schema.py ---
+2026-07-05 22:39:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:39 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 22:39:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:39 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-05 22:39:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:39 | INFO | tools.schema | schema:31 | Described table: orders
+2026-07-05 22:39:39 | INFO | test_tools | test_phase3:34 | ✓ tools/schema.py OK
+2026-07-05 22:39:39 | INFO | test_tools | test_phase3:38 | --- Testing tools/query.py ---
+2026-07-05 22:39:55 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:56 | INFO | tools.query | query:22 | Query executed: SELECT COUNT(*) FROM products
+2026-07-05 22:39:56 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:56 | WARNING | tools.query | query:17 | query_database called with non-SELECT: DELETE FROM products
+2026-07-05 22:39:56 | INFO | tools.query | query:39 | Explained query: SELECT customerName FROM customers WHERE country =
+2026-07-05 22:39:56 | INFO | test_tools | test_phase3:56 | ✓ tools/query.py OK
+2026-07-05 22:39:56 | INFO | test_tools | test_phase3:60 | --- Testing tools/write.py ---
+2026-07-05 22:39:56 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:57 | INFO | tools.write | write:28 | Preview: 38 rows would be affected by: UPDATE products SET buyPrice = buyPrice * 1.05 WHERE product
+2026-07-05 22:39:57 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:39:57 | INFO | tools.write | write:28 | Preview: 6 rows would be affected by: DELETE FROM orders WHERE status = 'Cancelled'
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:72 | ✓ tools/write.py OK
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:76 | --- Testing tools/approval.py ---
+2026-07-05 22:39:57 | INFO | tools.approval | approval:10 | Operation approved by admin, token: token-123
+2026-07-05 22:39:57 | INFO | tools.approval | approval:21 | Operation rejected by admin, reason: too risky
+2026-07-05 22:39:57 | WARNING | tools.approval | approval:35 | Approval expired after 400s (limit: 300s)
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:95 | ✓ tools/approval.py OK
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:99 | --- Testing tools/audit.py ---
+2026-07-05 22:39:57 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:39:57 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | How many products?
+2026-07-05 22:39:57 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:39:57 | INFO | tools.audit | audit:52 | Retrieved 1 audit records
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:120 | ✓ tools/audit.py OK
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:124 | --- Testing tools/rollback.py ---
+2026-07-05 22:39:57 | WARNING | tools.rollback | rollback:11 | No connection provided for rollback
+2026-07-05 22:39:57 | ERROR | tools.rollback | rollback:35 | Execution failed, rolled back: no such table: fake_table
+2026-07-05 22:39:57 | INFO | test_tools | test_phase3:138 | ✓ tools/rollback.py OK
+2026-07-05 22:41:24 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:41:24 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:41:24 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:41:24 | INFO | test_graph | test_phase4:19 | --- Testing READ flow (no approval needed) ---
+2026-07-05 22:41:43 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:41:43 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:41:44 | INFO | classify | classify:20 | Classifying question: How many customers are there?
+2026-07-05 22:41:44 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 22:41:44 | INFO | generate_sql | generate_sql:20 | Generating SQL for: How many customers are there?
+2026-07-05 22:41:44 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:41:45 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT COUNT(customerNumber) FROM customers;
+2026-07-05 22:41:45 | INFO | validate | validate:12 | Validating SQL: SELECT COUNT(customerNumber) FROM customers;
+2026-07-05 22:41:45 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:41:45 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 22:41:45 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:41:45 | INFO | execute | execute:56 | Executing SQL: SELECT COUNT(customerNumber) FROM customers;
+2026-07-05 22:41:45 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 22:41:45 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:41:45 | INFO | summarize | summarize:37 | Summary generated: There are 122 customers in total. That's quite a lot! It seems like your business has quite an engag...
+2026-07-05 22:41:45 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:41:45 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | How many customers are there?
+2026-07-05 22:41:45 | INFO | test_graph | test_phase4:42 | ✓ READ flow OK
+2026-07-05 22:41:45 | INFO | test_graph | test_phase4:47 | --- Testing BLOCKED flow ---
+2026-07-05 22:41:45 | INFO | classify | classify:20 | Classifying question: Drop the customers table
+2026-07-05 22:41:45 | INFO | classify | classify:31 | Classification result: DDL
+2026-07-05 22:41:45 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Drop the customers table
+2026-07-05 22:41:45 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:41:46 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE customers;
+2026-07-05 22:41:46 | INFO | validate | validate:12 | Validating SQL: DROP TABLE customers;
+2026-07-05 22:41:46 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 22:41:46 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE customers; | Error: DROP operations are blocked
+2026-07-05 22:41:46 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:41:46 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | Drop the customers table
+2026-07-05 22:41:46 | INFO | test_graph | test_phase4:66 | ✓ BLOCKED flow OK
+2026-07-05 22:41:46 | INFO | test_graph | test_phase4:71 | --- Testing WRITE flow with approval (interrupt/resume) ---
+2026-07-05 22:41:46 | INFO | classify | classify:20 | Classifying question: Update all cancelled orders status to Archived
+2026-07-05 22:41:46 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-05 22:41:46 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Update all cancelled orders status to Archived
+2026-07-05 22:41:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:41:47 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE orders SET status = 'Archived' WHERE status = 'Cancelled';
+2026-07-05 22:41:47 | INFO | validate | validate:12 | Validating SQL: UPDATE orders SET status = 'Archived' WHERE status = 'Cancelled';
+2026-07-05 22:41:47 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:41:47 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-05 22:41:47 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 22:41:47 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 22:41:47 | INFO | approval | approval:36 | Operation approved by test_admin, token: f7379f0c-e05d-423c-8829-7a78626410e4
+2026-07-05 22:41:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:41:47 | INFO | execute | execute:47 | Dry run result: [(6,)] rows affected
+2026-07-05 22:41:47 | INFO | execute | execute:56 | Executing SQL: UPDATE orders SET status = 'Archived' WHERE status = 'Cancelled';
+2026-07-05 22:41:47 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-05 22:41:47 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:41:48 | INFO | summarize | summarize:37 | Summary generated: All the orders that were previously marked as "Cancelled" have now been updated to "Archived". This ...
+2026-07-05 22:41:48 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:41:48 | INFO | tools.audit | audit:34 | Audit logged: UPDATE | SUCCESS | Update all cancelled orders status to Archived
+2026-07-05 22:41:48 | INFO | test_graph | test_phase4:120 | ✓ WRITE flow OK
+2026-07-05 22:42:57 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:42:57 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:45:51 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:45:51 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:50:06 | INFO | test_server | test_phase5:15 | --- Testing get_tables ---
+2026-07-05 22:50:39 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:50:40 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:50:40 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:50:40 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:50:40 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:50:40 | INFO | server | server:149 | get_tables called
+2026-07-05 22:50:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:40 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:20 | ✓ get_tables OK
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:24 | --- Testing get_database_schema ---
+2026-07-05 22:50:40 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-05 22:50:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:40 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:29 | ✓ get_database_schema OK
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:33 | --- Testing describe_database_table ---
+2026-07-05 22:50:40 | INFO | server | server:157 | describe_database_table called: orders
+2026-07-05 22:50:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:40 | INFO | tools.schema | schema:31 | Described table: orders
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:38 | ✓ describe_database_table OK
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:42 | --- Testing run_read_query ---
+2026-07-05 22:50:40 | INFO | server | server:164 | run_read_query called: SELECT COUNT(*) FROM products
+2026-07-05 22:50:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:40 | INFO | tools.query | query:22 | Query executed: SELECT COUNT(*) FROM products
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:47 | ✓ run_read_query OK
+2026-07-05 22:50:40 | INFO | test_server | test_phase5:51 | --- Testing explain_sql ---
+2026-07-05 22:50:40 | INFO | server | server:171 | explain_sql called: SELECT customerName FROM customers WHERE country = 'France'
+2026-07-05 22:50:43 | INFO | tools.query | query:39 | Explained query: SELECT customerName FROM customers WHERE country =
+2026-07-05 22:50:43 | INFO | test_server | test_phase5:56 | ✓ explain_sql OK
+2026-07-05 22:50:43 | INFO | test_server | test_phase5:60 | --- Testing preview_write_operation ---
+2026-07-05 22:50:43 | INFO | server | server:178 | preview_write_operation called: UPDATE products SET buyPrice = buyPrice * 1.1 WHERE productLine = 'Ships'
+2026-07-05 22:50:43 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:44 | INFO | tools.write | write:28 | Preview: 9 rows would be affected by: UPDATE products SET buyPrice = buyPrice * 1.1 WHERE productL
+2026-07-05 22:50:44 | INFO | test_server | test_phase5:65 | ✓ preview_write_operation OK
+2026-07-05 22:50:44 | INFO | test_server | test_phase5:69 | --- Testing ask_database (READ) ---
+2026-07-05 22:50:44 | INFO | server | server:58 | ask_database called: How many orders are there?
+2026-07-05 22:50:44 | INFO | classify | classify:20 | Classifying question: How many orders are there?
+2026-07-05 22:50:44 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 22:50:44 | INFO | generate_sql | generate_sql:20 | Generating SQL for: How many orders are there?
+2026-07-05 22:50:44 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:45 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT COUNT(orderNumber) FROM orders
+2026-07-05 22:50:45 | INFO | validate | validate:12 | Validating SQL: SELECT COUNT(orderNumber) FROM orders
+2026-07-05 22:50:45 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:50:45 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 22:50:45 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:45 | INFO | execute | execute:56 | Executing SQL: SELECT COUNT(orderNumber) FROM orders
+2026-07-05 22:50:45 | INFO | execute | execute:69 | Execution complete in 4ms
+2026-07-05 22:50:45 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:50:45 | INFO | summarize | summarize:37 | Summary generated: There are 326 orders in total. That's quite a lot of transactions!...
+2026-07-05 22:50:45 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:50:45 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | How many orders are there?
+2026-07-05 22:50:45 | INFO | test_server | test_phase5:75 | ✓ ask_database (READ) OK
+2026-07-05 22:50:45 | INFO | test_server | test_phase5:79 | --- Testing ask_database (WRITE - needs approval) ---
+2026-07-05 22:50:45 | INFO | server | server:58 | ask_database called: Delete all cancelled orders
+2026-07-05 22:50:45 | INFO | classify | classify:20 | Classifying question: Delete all cancelled orders
+2026-07-05 22:50:45 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-05 22:50:45 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Delete all cancelled orders
+2026-07-05 22:50:45 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:46 | INFO | generate_sql | generate_sql:38 | Generated SQL: DELETE FROM orders WHERE status = 'Cancelled';
+2026-07-05 22:50:46 | INFO | validate | validate:12 | Validating SQL: DELETE FROM orders WHERE status = 'Cancelled';
+2026-07-05 22:50:46 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 22:50:46 | INFO | risk | risk:21 | Operation: DELETE | Risk: HIGH
+2026-07-05 22:50:46 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 22:50:46 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-2, by=test_admin
+2026-07-05 22:50:46 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 22:50:46 | INFO | approval | approval:36 | Operation approved by test_admin, token: 9adbf34b-16be-4f9e-b5a2-0940aa3d840c
+2026-07-05 22:50:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:46 | INFO | execute | execute:47 | Dry run result: [(0,)] rows affected
+2026-07-05 22:50:46 | INFO | execute | execute:56 | Executing SQL: DELETE FROM orders WHERE status = 'Cancelled';
+2026-07-05 22:50:46 | INFO | execute | execute:69 | Execution complete in 1ms
+2026-07-05 22:50:46 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 22:50:47 | INFO | summarize | summarize:37 | Summary generated: All cancelled orders have been successfully removed from the system. If you need to verify that they...
+2026-07-05 22:50:47 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:50:47 | INFO | tools.audit | audit:34 | Audit logged: DELETE | SUCCESS | Delete all cancelled orders
+2026-07-05 22:50:47 | INFO | test_server | test_phase5:93 | ✓ ask_database (WRITE + approval) OK
+2026-07-05 22:50:47 | INFO | test_server | test_phase5:100 | --- Testing ask_database (BLOCKED) ---
+2026-07-05 22:50:47 | INFO | server | server:58 | ask_database called: Drop the products table
+2026-07-05 22:50:47 | INFO | classify | classify:20 | Classifying question: Drop the products table
+2026-07-05 22:50:47 | INFO | classify | classify:31 | Classification result: DDL
+2026-07-05 22:50:47 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Drop the products table
+2026-07-05 22:50:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:50:48 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE products;
+2026-07-05 22:50:48 | INFO | validate | validate:12 | Validating SQL: DROP TABLE products;
+2026-07-05 22:50:48 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 22:50:48 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE products; | Error: DROP operations are blocked
+2026-07-05 22:50:48 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:50:48 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | Drop the products table
+2026-07-05 22:50:48 | INFO | test_server | test_phase5:105 | ✓ ask_database (BLOCKED) OK
+2026-07-05 22:50:48 | INFO | test_server | test_phase5:109 | --- Testing get_audit_logs ---
+2026-07-05 22:50:48 | INFO | server | server:193 | get_audit_logs called: limit=5
+2026-07-05 22:50:48 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:50:48 | INFO | tools.audit | audit:52 | Retrieved 5 audit records
+2026-07-05 22:50:48 | INFO | test_server | test_phase5:114 | ✓ get_audit_logs OK
+2026-07-05 22:53:42 | INFO | app | app:430 | SQL AI Agent v1.0.0 starting | mode=cli
+2026-07-05 22:53:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 22:53:42 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:53:42 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:53:42 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:54:00 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:54:00 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:56:15 | INFO | app | app:430 | SQL AI Agent v1.0.0 starting | mode=mcp
+2026-07-05 22:56:15 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:56:15 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:56:15 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:56:15 | INFO | app | app:387 | Starting MCP server mode
+2026-07-05 22:56:47 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:56:48 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:56:48 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:56:48 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:56:48 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:58:51 | INFO | app | app:430 | SQL AI Agent v1.0.0 starting | mode=cli
+2026-07-05 22:58:51 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 22:58:51 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 22:58:51 | INFO | db | db:40 | Audit database ready
+2026-07-05 22:59:11 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 22:59:11 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 22:59:11 | INFO | app | app:155 | SQL Agent initialized
+2026-07-05 23:00:04 | INFO | classify | classify:20 | Classifying question: Find products priced between 20 and 50
+2026-07-05 23:00:07 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:00:07 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find products priced between 20 and 50
+2026-07-05 23:00:07 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:08 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT productName FROM products WHERE buyPrice BETWEEN 20 AND 50
+2026-07-05 23:00:08 | INFO | validate | validate:12 | Validating SQL: SELECT productName FROM products WHERE buyPrice BETWEEN 20 AND 50
+2026-07-05 23:00:08 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:00:08 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:00:08 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:08 | INFO | execute | execute:56 | Executing SQL: SELECT productName FROM products WHERE buyPrice BETWEEN 20 AND 50
+2026-07-05 23:00:08 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:00:08 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:00:15 | INFO | summarize | summarize:37 | Summary generated: Sure! The query you executed found all the products priced between $20 and $50. Here's a list of tho...
+2026-07-05 23:00:15 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:00:15 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find products priced between 20 and 50
+2026-07-05 23:00:30 | INFO | classify | classify:20 | Classifying question: Find orders shipped to France
+2026-07-05 23:00:31 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:00:31 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find orders shipped to France
+2026-07-05 23:00:31 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:32 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT customerName FROM customers WHERE country = 'France';
+2026-07-05 23:00:32 | INFO | validate | validate:12 | Validating SQL: SELECT customerName FROM customers WHERE country = 'France';
+2026-07-05 23:00:32 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:00:32 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:00:32 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:32 | INFO | execute | execute:56 | Executing SQL: SELECT customerName FROM customers WHERE country = 'France';
+2026-07-05 23:00:32 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:00:32 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:00:33 | INFO | summarize | summarize:37 | Summary generated: Hey there! Based on your query, we found that there are 12 customers who have placed orders with us ...
+2026-07-05 23:00:33 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:00:33 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find orders shipped to France
+2026-07-05 23:00:52 | INFO | classify | classify:20 | Classifying question: Calculate the total units in stock
+2026-07-05 23:00:52 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:00:52 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Calculate the total units in stock
+2026-07-05 23:00:52 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:53 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT SUM(quantityInStock) AS totalUnitsInStock FROM products;
+2026-07-05 23:00:53 | INFO | validate | validate:12 | Validating SQL: SELECT SUM(quantityInStock) AS totalUnitsInStock FROM products;
+2026-07-05 23:00:53 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:00:53 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:00:53 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:00:53 | INFO | execute | execute:56 | Executing SQL: SELECT SUM(quantityInStock) AS totalUnitsInStock FROM products;
+2026-07-05 23:00:53 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:00:53 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:00:54 | INFO | summarize | summarize:37 | Summary generated: The total units in stock across all products is 555,131. This means there are 555,131 items availabl...
+2026-07-05 23:00:54 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:00:54 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Calculate the total units in stock
+2026-07-05 23:01:09 | INFO | classify | classify:20 | Classifying question: Find the maximum freight charge
+2026-07-05 23:01:09 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:01:09 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find the maximum freight charge
+2026-07-05 23:01:09 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:01:10 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT MAX(freight) FROM orders;
+2026-07-05 23:01:10 | INFO | validate | validate:12 | Validating SQL: SELECT MAX(freight) FROM orders;
+2026-07-05 23:01:10 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:01:10 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:01:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:01:10 | INFO | execute | execute:56 | Executing SQL: SELECT MAX(freight) FROM orders;
+2026-07-05 23:01:10 | ERROR | execute | execute:78 | Execution failed: (sqlite3.OperationalError) no such column: freight
+[SQL: SELECT MAX(freight) FROM orders;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:01:10 | INFO | summarize | summarize:23 | Summarizing error: (sqlite3.OperationalError) no such column: freight
+[SQL: SELECT MAX(freight) FROM orders;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:01:10 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:01:10 | INFO | tools.audit | audit:34 | Audit logged: SELECT | ERROR | Find the maximum freight charge
+2026-07-05 23:01:23 | INFO | classify | classify:20 | Classifying question: Find cities having more than two customers
+2026-07-05 23:01:23 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:01:23 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find cities having more than two customers
+2026-07-05 23:01:23 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:01:24 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:01:24 | INFO | validate | validate:12 | Validating SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:01:24 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:01:24 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:01:24 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:01:24 | INFO | execute | execute:56 | Executing SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:01:24 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:01:24 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:01:25 | INFO | summarize | summarize:37 | Summary generated: The query found that there are cities with more than two customers. Here's what it means:
+
+Brickhave...
+2026-07-05 23:01:25 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:01:25 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find cities having more than two customers
+2026-07-05 23:02:59 | INFO | classify | classify:20 | Classifying question: Insert a new customer into the Customers table.
+2026-07-05 23:03:00 | INFO | classify | classify:31 | Classification result: INSERT
+2026-07-05 23:03:00 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Insert a new customer into the Customers table.
+2026-07-05 23:03:00 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:01 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:03:01 | INFO | validate | validate:12 | Validating SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:03:01 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:01 | INFO | risk | risk:21 | Operation: INSERT | Risk: LOW
+2026-07-05 23:03:01 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:01 | INFO | execute | execute:56 | Executing SQL: SELECT city 
+FROM customers 
+GROUP BY city 
+HAVING COUNT(customerNumber) > 2;
+2026-07-05 23:03:01 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:03:01 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:03:02 | INFO | summarize | summarize:37 | Summary generated: The query you ran found cities with more than two customers. It looks like there are multiple locati...
+2026-07-05 23:03:02 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:03:02 | INFO | tools.audit | audit:34 | Audit logged: INSERT | SUCCESS | Insert a new customer into the Customers table.
+2026-07-05 23:03:02 | INFO | classify | classify:20 | Classifying question: Customer ID: C1001
+2026-07-05 23:03:02 | INFO | classify | classify:31 | Classification result: UNSAFE
+2026-07-05 23:03:02 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Customer ID: C1001
+2026-07-05 23:03:02 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:04 | INFO | generate_sql | generate_sql:38 | Generated SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit, customerLocation) VALUES (1004.0, 'New Customer', 'Doe', 'John', '555-1234', '123 New St', 'New City', 'NY', '12345', 'USA', 1002.0, 10000.0, 0.0);
+2026-07-05 23:03:04 | INFO | validate | validate:12 | Validating SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit, customerLocation) VALUES (1004.0, 'New Customer', 'Doe', 'John', '555-1234', '123 New St', 'New City', 'NY', '12345', 'USA', 1002.0, 10000.0, 0.0);
+2026-07-05 23:03:04 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:04 | INFO | risk | risk:21 | Operation: UNSAFE | Risk: HIGH
+2026-07-05 23:03:04 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 23:03:04 | INFO | classify | classify:20 | Classifying question: Company Name: ABC Traders
+2026-07-05 23:03:04 | INFO | classify | classify:31 | Classification result: UNSAFE
+2026-07-05 23:03:04 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Company Name: ABC Traders
+2026-07-05 23:03:04 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:06 | INFO | generate_sql | generate_sql:38 | Generated SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit, customerLocation) 
+VALUES ('C1001', 'ABC Traders', 'Smith', 'John', '555-1234', '123 Main St', 'New York', 'NY', '10001', 'USA', 1001.0, 100000.0, 0.0);
+2026-07-05 23:03:06 | INFO | validate | validate:12 | Validating SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit, customerLocation) 
+VALUES ('C1001', 'ABC Traders', 'Smith', 'John', '555-1234', '123 Main St', 'New York', 'NY', '10001', 'USA', 1001.0, 100000.0, 0.0);
+2026-07-05 23:03:06 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:06 | INFO | risk | risk:21 | Operation: UNSAFE | Risk: HIGH
+2026-07-05 23:03:06 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 23:03:06 | INFO | classify | classify:20 | Classifying question: Contact Name: Rahul Sharma
+2026-07-05 23:03:06 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:03:06 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Contact Name: Rahul Sharma
+2026-07-05 23:03:06 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:07 | INFO | generate_sql | generate_sql:38 | Generated SQL: INSERT INTO customers (customerNumber, customerName) VALUES ('C1001', 'ABC Traders');
+2026-07-05 23:03:07 | INFO | validate | validate:12 | Validating SQL: INSERT INTO customers (customerNumber, customerName) VALUES ('C1001', 'ABC Traders');
+2026-07-05 23:03:07 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:07 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:03:07 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:07 | INFO | execute | execute:56 | Executing SQL: INSERT INTO customers (customerNumber, customerName) VALUES ('C1001', 'ABC Traders');
+2026-07-05 23:03:07 | INFO | execute | execute:69 | Execution complete in 8ms
+2026-07-05 23:03:07 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:03:08 | INFO | summarize | summarize:37 | Summary generated: Rahul Sharma, it looks like you just added a new customer named "ABC Traders" with the customer numb...
+2026-07-05 23:03:08 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:03:08 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Contact Name: Rahul Sharma
+2026-07-05 23:03:08 | INFO | classify | classify:20 | Classifying question: Contact Title: Owner
+2026-07-05 23:03:08 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:03:08 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Contact Title: Owner
+2026-07-05 23:03:08 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:09 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT customerName FROM customers WHERE contactName = 'Rahul Sharma' AND company = 'ABC Traders'
+2026-07-05 23:03:09 | INFO | validate | validate:12 | Validating SQL: SELECT customerName FROM customers WHERE contactName = 'Rahul Sharma' AND company = 'ABC Traders'
+2026-07-05 23:03:09 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:09 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:03:09 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:09 | INFO | execute | execute:56 | Executing SQL: SELECT customerName FROM customers WHERE contactName = 'Rahul Sharma' AND company = 'ABC Traders'
+2026-07-05 23:03:09 | ERROR | execute | execute:78 | Execution failed: (sqlite3.OperationalError) no such column: contactName
+[SQL: SELECT customerName FROM customers WHERE contactName = 'Rahul Sharma' AND company = 'ABC Traders']
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:03:09 | INFO | summarize | summarize:23 | Summarizing error: (sqlite3.OperationalError) no such column: contactName
+[SQL: SELECT customerName FROM customers WHERE contactName = 'Rahul Sharma' AND company = 'ABC Traders']
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:03:09 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:03:09 | INFO | tools.audit | audit:34 | Audit logged: SELECT | ERROR | Contact Title: Owner
+2026-07-05 23:03:09 | INFO | classify | classify:20 | Classifying question: City: Delhi
+2026-07-05 23:03:09 | INFO | classify | classify:31 | Classification result: UNSAFE
+2026-07-05 23:03:09 | INFO | generate_sql | generate_sql:20 | Generating SQL for: City: Delhi
+2026-07-05 23:03:09 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:10 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT customerName FROM customers WHERE contactFirstName = 'Rahul' AND contactLastName = 'Sharma' AND company = 'ABC Traders'
+2026-07-05 23:03:10 | INFO | validate | validate:12 | Validating SQL: SELECT customerName FROM customers WHERE contactFirstName = 'Rahul' AND contactLastName = 'Sharma' AND company = 'ABC Traders'
+2026-07-05 23:03:10 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:10 | INFO | risk | risk:21 | Operation: UNSAFE | Risk: HIGH
+2026-07-05 23:03:10 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 23:03:10 | INFO | classify | classify:20 | Classifying question: Country: India
+2026-07-05 23:03:10 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:03:10 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Country: India
+2026-07-05 23:03:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:11 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT customerName FROM customers WHERE contactFirstName = 'Rahul' AND contactLastName = 'Sharma' AND city = 'Delhi';
+2026-07-05 23:03:11 | INFO | validate | validate:12 | Validating SQL: SELECT customerName FROM customers WHERE contactFirstName = 'Rahul' AND contactLastName = 'Sharma' AND city = 'Delhi';
+2026-07-05 23:03:11 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:03:11 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:03:11 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:03:11 | INFO | execute | execute:56 | Executing SQL: SELECT customerName FROM customers WHERE contactFirstName = 'Rahul' AND contactLastName = 'Sharma' AND city = 'Delhi';
+2026-07-05 23:03:11 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:03:11 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:03:12 | INFO | summarize | summarize:37 | Summary generated: Hey there! Based on your query for customers in India with the contact name Rahul Sharma and city De...
+2026-07-05 23:03:12 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:03:12 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Country: India
+2026-07-05 23:04:11 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:04:11 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:04:11 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:04:11 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:04:11 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:04:11 | INFO | server | server:210 | Starting SQL AI MCP Server
+2026-07-05 23:04:37 | INFO | app | app:343 | Agent shutdown by user
+2026-07-05 23:04:37 | INFO | app | app:447 | SQL AI Agent shutdown complete
+2026-07-05 23:07:49 | INFO | app | app:458 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:07:49 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:07:49 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:07:49 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:07:49 | INFO | app | app:401 | Starting MCP HTTP server on 127.0.0.1:8100
+2026-07-05 23:08:10 | INFO | app | app:458 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:08:10 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:08:10 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:08:10 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:08:10 | INFO | app | app:401 | Starting MCP HTTP server on 127.0.0.1:8100
+2026-07-05 23:08:40 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:08:40 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:08:41 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:08:41 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:08:41 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:12:38 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:12:38 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:12:38 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:12:38 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:12:38 | INFO | app | app:386 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:13:01 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:13:01 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:13:01 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:13:01 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:13:01 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:13:46 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:13:46 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:13:46 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:13:46 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:13:46 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:13:46 | INFO | server | server:220 | Starting SQL AI MCP Server (SSE) on 127.0.0.1:8100
+2026-07-05 23:13:52 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:13:52 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:13:52 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:13:52 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:13:52 | INFO | app | app:386 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:14:16 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:14:16 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:14:16 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:14:16 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:14:16 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:14:32 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:14:32 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:14:32 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:14:32 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:14:32 | INFO | app | app:386 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:14:59 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:14:59 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:14:59 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:14:59 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:14:59 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:15:50 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=mcp
+2026-07-05 23:15:50 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:15:50 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:15:50 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:15:50 | INFO | app | app:372 | Starting MCP server (stdio)
+2026-07-05 23:16:13 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:16:13 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:16:13 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:16:13 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:16:13 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:17:47 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:17:47 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:17:47 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:17:47 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:17:47 | INFO | app | app:386 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:18:05 | INFO | server | server:58 | ask_database called: How many products are there?
+2026-07-05 23:18:05 | INFO | classify | classify:20 | Classifying question: How many products are there?
+2026-07-05 23:18:07 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:18:07 | INFO | generate_sql | generate_sql:20 | Generating SQL for: How many products are there?
+2026-07-05 23:18:07 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:18:08 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:18:08 | INFO | validate | validate:12 | Validating SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:18:08 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:18:08 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:18:08 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:18:08 | INFO | execute | execute:56 | Executing SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:18:08 | INFO | execute | execute:69 | Execution complete in 3ms
+2026-07-05 23:18:08 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:18:09 | INFO | summarize | summarize:37 | Summary generated: There are 110 products listed in the database. That's quite a few items to manage!...
+2026-07-05 23:18:09 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:18:09 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | How many products are there?
+2026-07-05 23:18:11 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:18:11 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:18:11 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:18:11 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:18:11 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:18:43 | INFO | app | app:449 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:18:43 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:18:43 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:18:43 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:18:43 | INFO | app | app:386 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:19:00 | INFO | server | server:58 | ask_database called: How many products are there?
+2026-07-05 23:19:00 | INFO | classify | classify:20 | Classifying question: How many products are there?
+2026-07-05 23:19:00 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:19:00 | INFO | generate_sql | generate_sql:20 | Generating SQL for: How many products are there?
+2026-07-05 23:19:00 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:19:01 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:19:01 | INFO | validate | validate:12 | Validating SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:19:01 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:19:01 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:19:01 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:19:01 | INFO | execute | execute:56 | Executing SQL: SELECT COUNT(*) FROM products;
+2026-07-05 23:19:01 | INFO | execute | execute:69 | Execution complete in 2ms
+2026-07-05 23:19:01 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:19:02 | INFO | summarize | summarize:37 | Summary generated: There are 110 products in total. That's quite a diverse range!...
+2026-07-05 23:19:02 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:19:02 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | How many products are there?
+2026-07-05 23:19:02 | INFO | server | server:58 | ask_database called: Drop the orders table
+2026-07-05 23:19:02 | INFO | classify | classify:20 | Classifying question: Drop the orders table
+2026-07-05 23:19:02 | INFO | classify | classify:31 | Classification result: DDL
+2026-07-05 23:19:02 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Drop the orders table
+2026-07-05 23:19:02 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:19:03 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE orders;
+2026-07-05 23:19:03 | INFO | validate | validate:12 | Validating SQL: DROP TABLE orders;
+2026-07-05 23:19:03 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 23:19:03 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE orders; | Error: DROP operations are blocked
+2026-07-05 23:19:03 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:19:03 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | Drop the orders table
+2026-07-05 23:19:03 | INFO | server | server:58 | ask_database called: Update all shipped orders to completed
+2026-07-05 23:19:03 | INFO | classify | classify:20 | Classifying question: Update all shipped orders to completed
+2026-07-05 23:19:03 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-05 23:19:03 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Update all shipped orders to completed
+2026-07-05 23:19:03 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:19:04 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE orders SET status = 'Completed' WHERE shippedDate IS NOT NULL;
+2026-07-05 23:19:04 | INFO | validate | validate:12 | Validating SQL: UPDATE orders SET status = 'Completed' WHERE shippedDate IS NOT NULL;
+2026-07-05 23:19:04 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:19:04 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-05 23:19:04 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 23:19:04 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-4, by=sse_test_user
+2026-07-05 23:19:04 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 23:19:04 | INFO | approval | approval:36 | Operation approved by sse_test_user, token: 0cf37baf-e471-4e8d-94ce-45211907d3db
+2026-07-05 23:19:04 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:19:04 | INFO | execute | execute:47 | Dry run result: [(312,)] rows affected
+2026-07-05 23:19:04 | INFO | execute | execute:56 | Executing SQL: UPDATE orders SET status = 'Completed' WHERE shippedDate IS NOT NULL;
+2026-07-05 23:19:04 | INFO | execute | execute:69 | Execution complete in 18ms
+2026-07-05 23:19:04 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:19:05 | INFO | summarize | summarize:37 | Summary generated: Great! All the orders that have been shipped are now marked as completed. This means they're all rea...
+2026-07-05 23:19:05 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:19:05 | INFO | tools.audit | audit:34 | Audit logged: UPDATE | SUCCESS | Update all shipped orders to completed
+2026-07-05 23:19:05 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:19:05 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:19:05 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:19:05 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:19:05 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:20:11 | INFO | app | app:447 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:20:11 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:20:11 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:20:11 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:20:11 | INFO | app | app:384 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:20:36 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:20:36 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:20:36 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:20:36 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:20:36 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:22:05 | INFO | app | app:447 | SQL AI Agent v1.0.0 starting | mode=http
+2026-07-05 23:22:05 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:22:05 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:22:05 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:22:05 | INFO | app | app:384 | Starting MCP SSE server on 127.0.0.1:8100
+2026-07-05 23:22:29 | INFO | graph | graph:68 | Building LangGraph agent
+2026-07-05 23:22:29 | INFO | graph | graph:117 | Graph compiled successfully
+2026-07-05 23:22:29 | INFO | db | db:20 | Setting up audit database schema
+2026-07-05 23:22:29 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:22:29 | INFO | db | db:40 | Audit database ready
+2026-07-05 23:22:38 | INFO | server | server:149 | get_tables called
+2026-07-05 23:22:38 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:22:38 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 23:22:52 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-05 23:22:52 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:22:52 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-05 23:22:58 | INFO | server | server:193 | get_audit_logs called: limit=20
+2026-07-05 23:22:58 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:22:58 | INFO | tools.audit | audit:52 | Retrieved 20 audit records
+2026-07-05 23:23:01 | INFO | server | server:193 | get_audit_logs called: limit=20
+2026-07-05 23:23:01 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:23:01 | INFO | tools.audit | audit:52 | Retrieved 20 audit records
+2026-07-05 23:23:29 | INFO | server | server:171 | explain_sql called: select * from customers where country = 'USA'
+2026-07-05 23:23:30 | INFO | tools.query | query:39 | Explained query: select * from customers where country = 'USA'
+2026-07-05 23:24:14 | INFO | server | server:58 | ask_database called: Rank products by price.
+2026-07-05 23:24:14 | INFO | classify | classify:20 | Classifying question: Rank products by price.
+2026-07-05 23:24:14 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:24:14 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Rank products by price.
+2026-07-05 23:24:14 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:15 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT productName, buyPrice FROM products ORDER BY buyPrice ASC
+2026-07-05 23:24:15 | INFO | validate | validate:12 | Validating SQL: SELECT productName, buyPrice FROM products ORDER BY buyPrice ASC
+2026-07-05 23:24:15 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:24:15 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:24:15 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:15 | INFO | execute | execute:56 | Executing SQL: SELECT productName, buyPrice FROM products ORDER BY buyPrice ASC
+2026-07-05 23:24:15 | INFO | execute | execute:69 | Execution complete in 3ms
+2026-07-05 23:24:15 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:24:17 | INFO | summarize | summarize:37 | Summary generated: Sure! The products are listed from the cheapest to the most expensive based on their buy price. For ...
+2026-07-05 23:24:17 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:24:17 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Rank products by price.
+2026-07-05 23:24:42 | INFO | server | server:58 | ask_database called: Show customers who ordered every category.
+2026-07-05 23:24:42 | INFO | classify | classify:20 | Classifying question: Show customers who ordered every category.
+2026-07-05 23:24:42 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:24:42 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Show customers who ordered every category.
+2026-07-05 23:24:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:44 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT c.customerName FROM customers c WHERE NOT EXISTS (SELECT DISTINCT p.productLine FROM products p JOIN orderdetails od ON p.productCode = od.productCode WHERE od.orderNumber NOT IN (SELECT o.orderNumber FROM orders o JOIN customerorder co ON o.orderNumber = co.orderNumber WHERE co.customerNumber = c.customerNumber))
+2026-07-05 23:24:44 | INFO | validate | validate:12 | Validating SQL: SELECT c.customerName FROM customers c WHERE NOT EXISTS (SELECT DISTINCT p.productLine FROM products p JOIN orderdetails od ON p.productCode = od.productCode WHERE od.orderNumber NOT IN (SELECT o.orderNumber FROM orders o JOIN customerorder co ON o.orderNumber = co.orderNumber WHERE co.customerNumber = c.customerNumber))
+2026-07-05 23:24:44 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:24:44 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:24:44 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:44 | INFO | execute | execute:56 | Executing SQL: SELECT c.customerName FROM customers c WHERE NOT EXISTS (SELECT DISTINCT p.productLine FROM products p JOIN orderdetails od ON p.productCode = od.productCode WHERE od.orderNumber NOT IN (SELECT o.orderNumber FROM orders o JOIN customerorder co ON o.orderNumber = co.orderNumber WHERE co.customerNumber = c.customerNumber))
+2026-07-05 23:24:44 | ERROR | execute | execute:78 | Execution failed: (sqlite3.OperationalError) no such table: customerorder
+[SQL: SELECT c.customerName FROM customers c WHERE NOT EXISTS (SELECT DISTINCT p.productLine FROM products p JOIN orderdetails od ON p.productCode = od.productCode WHERE od.orderNumber NOT IN (SELECT o.orderNumber FROM orders o JOIN customerorder co ON o.orderNumber = co.orderNumber WHERE co.customerNumber = c.customerNumber))]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:24:44 | INFO | summarize | summarize:23 | Summarizing error: (sqlite3.OperationalError) no such table: customerorder
+[SQL: SELECT c.customerName FROM customers c WHERE NOT EXISTS (SELECT DISTINCT p.productLine FROM products p JOIN orderdetails od ON p.productCode = od.productCode WHERE od.orderNumber NOT IN (SELECT o.orderNumber FROM orders o JOIN customerorder co ON o.orderNumber = co.orderNumber WHERE co.customerNumber = c.customerNumber))]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:24:44 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:24:44 | INFO | tools.audit | audit:34 | Audit logged: SELECT | ERROR | Show customers who ordered every category.
+2026-07-05 23:24:58 | INFO | server | server:58 | ask_database called: Display monthly sales totals
+2026-07-05 23:24:58 | INFO | classify | classify:20 | Classifying question: Display monthly sales totals
+2026-07-05 23:24:58 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:24:58 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Display monthly sales totals
+2026-07-05 23:24:58 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:59 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT 
+    strftime('%Y-%m', orderDate) AS month, 
+    SUM(totalsales) AS total_sales
+FROM 
+    orders 
+JOIN 
+    orderdetails ON orders.orderNumber = orderdetails.orderNumber
+GROUP BY 
+    month;
+2026-07-05 23:24:59 | INFO | validate | validate:12 | Validating SQL: SELECT 
+    strftime('%Y-%m', orderDate) AS month, 
+    SUM(totalsales) AS total_sales
+FROM 
+    orders 
+JOIN 
+    orderdetails ON orders.orderNumber = orderdetails.orderNumber
+GROUP BY 
+    month;
+2026-07-05 23:24:59 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:24:59 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:24:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:24:59 | INFO | execute | execute:56 | Executing SQL: SELECT 
+    strftime('%Y-%m', orderDate) AS month, 
+    SUM(totalsales) AS total_sales
+FROM 
+    orders 
+JOIN 
+    orderdetails ON orders.orderNumber = orderdetails.orderNumber
+GROUP BY 
+    month;
+2026-07-05 23:24:59 | INFO | execute | execute:69 | Execution complete in 13ms
+2026-07-05 23:24:59 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:25:01 | INFO | summarize | summarize:37 | Summary generated: The result shows the total sales for each month from 2003 to 2005. You can see that sales fluctuated...
+2026-07-05 23:25:01 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:25:01 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Display monthly sales totals
+2026-07-05 23:25:11 | INFO | server | server:193 | get_audit_logs called: limit=20
+2026-07-05 23:25:11 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:25:11 | INFO | tools.audit | audit:52 | Retrieved 20 audit records
+2026-07-05 23:25:20 | INFO | server | server:193 | get_audit_logs called: limit=20
+2026-07-05 23:25:20 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:25:20 | INFO | tools.audit | audit:52 | Retrieved 20 audit records
+2026-07-05 23:25:28 | INFO | server | server:58 | ask_database called: Display the top three products by quantity sold.
+2026-07-05 23:25:28 | INFO | classify | classify:20 | Classifying question: Display the top three products by quantity sold.
+2026-07-05 23:25:28 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:25:28 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Display the top three products by quantity sold.
+2026-07-05 23:25:28 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:25:29 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT productName FROM orderdetails JOIN products ON orderdetails.productCode = products.productCode GROUP BY productName ORDER BY SUM(quantityOrdered) DESC LIMIT 3
+2026-07-05 23:25:29 | INFO | validate | validate:12 | Validating SQL: SELECT productName FROM orderdetails JOIN products ON orderdetails.productCode = products.productCode GROUP BY productName ORDER BY SUM(quantityOrdered) DESC LIMIT 3
+2026-07-05 23:25:29 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:25:29 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:25:29 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:25:29 | INFO | execute | execute:56 | Executing SQL: SELECT productName FROM orderdetails JOIN products ON orderdetails.productCode = products.productCode GROUP BY productName ORDER BY SUM(quantityOrdered) DESC LIMIT 3
+2026-07-05 23:25:29 | INFO | execute | execute:69 | Execution complete in 8ms
+2026-07-05 23:25:29 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:25:31 | INFO | summarize | summarize:37 | Summary generated: Based on the query results, it looks like your store's best-selling products are:
+
+1. **The 1992 Fer...
+2026-07-05 23:25:31 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:25:31 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Display the top three products by quantity sold.
+2026-07-05 23:25:53 | INFO | server | server:58 | ask_database called: Insert a new supplier into the Suppliers table.
+
+Company Name: Fresh Foods Ltd
+Contact Name: John Smith
+Contact Title: Sales Manager
+City: New York
+Country: USA
+Phone: (212) 555-1000
+2026-07-05 23:25:53 | INFO | classify | classify:20 | Classifying question: Insert a new supplier into the Suppliers table.
+
+Company Name: Fresh Foods Ltd
+Contact Name: John Smith
+Contact Title: Sales Manager
+City: New York
+Country: USA
+Phone: (212) 555-1000
+2026-07-05 23:25:53 | INFO | classify | classify:31 | Classification result: INSERT
+2026-07-05 23:25:53 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Insert a new supplier into the Suppliers table.
+
+Company Name: Fresh Foods Ltd
+Contact Name: John Smith
+Contact Title: Sales Manager
+City: New York
+Country: USA
+Phone: (212) 555-1000
+2026-07-05 23:25:53 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:25:55 | INFO | generate_sql | generate_sql:38 | Generated SQL: INSERT INTO Suppliers (companyName, contactName, contactTitle, city, country, phone) 
+VALUES ('Fresh Foods Ltd', 'John Smith', 'Sales Manager', 'New York', 'USA', '(212) 555-1000');
+2026-07-05 23:25:55 | INFO | validate | validate:12 | Validating SQL: INSERT INTO Suppliers (companyName, contactName, contactTitle, city, country, phone) 
+VALUES ('Fresh Foods Ltd', 'John Smith', 'Sales Manager', 'New York', 'USA', '(212) 555-1000');
+2026-07-05 23:25:55 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:25:55 | INFO | risk | risk:21 | Operation: INSERT | Risk: LOW
+2026-07-05 23:25:55 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:25:55 | INFO | execute | execute:56 | Executing SQL: INSERT INTO Suppliers (companyName, contactName, contactTitle, city, country, phone) 
+VALUES ('Fresh Foods Ltd', 'John Smith', 'Sales Manager', 'New York', 'USA', '(212) 555-1000');
+2026-07-05 23:25:55 | ERROR | execute | execute:78 | Execution failed: (sqlite3.OperationalError) no such table: Suppliers
+[SQL: INSERT INTO Suppliers (companyName, contactName, contactTitle, city, country, phone) 
+VALUES ('Fresh Foods Ltd', 'John Smith', 'Sales Manager', 'New York', 'USA', '(212) 555-1000');]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:25:55 | INFO | summarize | summarize:23 | Summarizing error: (sqlite3.OperationalError) no such table: Suppliers
+[SQL: INSERT INTO Suppliers (companyName, contactName, contactTitle, city, country, phone) 
+VALUES ('Fresh Foods Ltd', 'John Smith', 'Sales Manager', 'New York', 'USA', '(212) 555-1000');]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:25:55 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:25:55 | INFO | tools.audit | audit:34 | Audit logged: INSERT | ERROR | Insert a new supplier into the Suppliers table.
+
+C
+2026-07-05 23:26:22 | INFO | server | server:58 | ask_database called: nsert a new customer into the Customers table.
+
+Customer ID: C1001
+Company Name: ABC Traders
+Contact Name: Rahul Sharma
+Contact Title: Owner
+City: Delhi
+Country: India
+Phone: +91-9876543210
+2026-07-05 23:26:22 | INFO | classify | classify:20 | Classifying question: nsert a new customer into the Customers table.
+
+Customer ID: C1001
+Company Name: ABC Traders
+Contact Name: Rahul Sharma
+Contact Title: Owner
+City: Delhi
+Country: India
+Phone: +91-9876543210
+2026-07-05 23:26:22 | INFO | classify | classify:31 | Classification result: INSERT
+2026-07-05 23:26:22 | INFO | generate_sql | generate_sql:20 | Generating SQL for: nsert a new customer into the Customers table.
+
+Customer ID: C1001
+Company Name: ABC Traders
+Contact Name: Rahul Sharma
+Contact Title: Owner
+City: Delhi
+Country: India
+Phone: +91-9876543210
+2026-07-05 23:26:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:26:24 | INFO | generate_sql | generate_sql:38 | Generated SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, city, state, postalCode, country) VALUES ('C1001', 'ABC Traders', 'Sharma', 'Rahul', '+91-9876543210', 'Delhi', NULL, NULL, 'India');
+2026-07-05 23:26:24 | INFO | validate | validate:12 | Validating SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, city, state, postalCode, country) VALUES ('C1001', 'ABC Traders', 'Sharma', 'Rahul', '+91-9876543210', 'Delhi', NULL, NULL, 'India');
+2026-07-05 23:26:24 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:26:24 | INFO | risk | risk:21 | Operation: INSERT | Risk: LOW
+2026-07-05 23:26:24 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:26:24 | INFO | execute | execute:56 | Executing SQL: INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, city, state, postalCode, country) VALUES ('C1001', 'ABC Traders', 'Sharma', 'Rahul', '+91-9876543210', 'Delhi', NULL, NULL, 'India');
+2026-07-05 23:26:24 | INFO | execute | execute:69 | Execution complete in 11ms
+2026-07-05 23:26:24 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:26:25 | INFO | summarize | summarize:37 | Summary generated: The customer "ABC Traders" with ID C1001 has been successfully added to the Customers table. Their c...
+2026-07-05 23:26:25 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:26:25 | INFO | tools.audit | audit:34 | Audit logged: INSERT | SUCCESS | nsert a new customer into the Customers table.
+
+Cu
+2026-07-05 23:28:16 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-05 23:28:16 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-05 23:28:16 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-05 23:28:16 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-05 23:28:16 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:28:17 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE office;
+2026-07-05 23:28:17 | INFO | validate | validate:12 | Validating SQL: DROP TABLE office;
+2026-07-05 23:28:17 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 23:28:17 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE office; | Error: DROP operations are blocked
+2026-07-05 23:28:17 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:28:17 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | delete office table
+2026-07-05 23:29:15 | INFO | server | server:58 | ask_database called: Update product prices by 10%
+2026-07-05 23:29:15 | INFO | classify | classify:20 | Classifying question: Update product prices by 10%
+2026-07-05 23:29:15 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-05 23:29:15 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Update product prices by 10%
+2026-07-05 23:29:15 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:29:16 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-05 23:29:16 | INFO | validate | validate:12 | Validating SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-05 23:29:16 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:29:16 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-05 23:29:16 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 23:29:21 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-8, by=streamlit_user
+2026-07-05 23:29:21 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-05 23:29:21 | INFO | approval | approval:36 | Operation approved by streamlit_user, token: bf47c3e7-8e02-4695-9b51-942830361cfb
+2026-07-05 23:29:21 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:29:21 | INFO | execute | execute:47 | Dry run result: [(110,)] rows affected
+2026-07-05 23:29:21 | INFO | execute | execute:56 | Executing SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-05 23:29:21 | INFO | execute | execute:69 | Execution complete in 17ms
+2026-07-05 23:29:21 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:29:22 | INFO | summarize | summarize:37 | Summary generated: Great update! All product prices have been increased by 10%. This means that your products are now m...
+2026-07-05 23:29:22 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:29:22 | INFO | tools.audit | audit:34 | Audit logged: UPDATE | SUCCESS | Update product prices by 10%
+2026-07-05 23:44:33 | INFO | server | server:58 | ask_database called: how are you
+2026-07-05 23:44:33 | INFO | classify | classify:20 | Classifying question: how are you
+2026-07-05 23:44:35 | INFO | classify | classify:31 | Classification result: UNSAFE
+2026-07-05 23:44:35 | INFO | generate_sql | generate_sql:20 | Generating SQL for: how are you
+2026-07-05 23:44:35 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:44:36 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT * FROM customers WHERE customerNumber = 103;
+2026-07-05 23:44:36 | INFO | validate | validate:12 | Validating SQL: SELECT * FROM customers WHERE customerNumber = 103;
+2026-07-05 23:44:36 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:44:36 | INFO | risk | risk:21 | Operation: UNSAFE | Risk: HIGH
+2026-07-05 23:44:36 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 23:44:48 | INFO | server | server:122 | reject_operation called: thread=mcp-thread-9, reason=Rejected via SafeSQL UI
+2026-07-05 23:44:48 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-05 23:44:48 | INFO | approval | approval:32 | Operation rejected by user
+2026-07-05 23:44:48 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:44:48 | INFO | tools.audit | audit:34 | Audit logged: UNSAFE | SUCCESS | how are you
+2026-07-05 23:45:30 | INFO | server | server:149 | get_tables called
+2026-07-05 23:45:30 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:30 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-05 23:45:31 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-05 23:45:31 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:31 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-05 23:45:31 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-05 23:45:31 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:31 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-05 23:45:39 | INFO | server | server:140 | get_database_schema called: dummy
+2026-07-05 23:45:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:39 | INFO | tools.schema | schema:23 | Retrieved schema for: dummy
+2026-07-05 23:45:39 | INFO | server | server:157 | describe_database_table called: dummy
+2026-07-05 23:45:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:39 | INFO | tools.schema | schema:31 | Described table: dummy
+2026-07-05 23:45:41 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:45:41 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:41 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:45:41 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:45:41 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:41 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:45:50 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:45:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:50 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:45:50 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:45:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:50 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:45:50 | INFO | server | server:140 | get_database_schema called: 
+2026-07-05 23:45:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:45:51 | INFO | tools.schema | schema:23 | Retrieved schema for: all tables
+2026-07-05 23:46:08 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:46:08 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:46:08 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:46:09 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:46:09 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:46:09 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:46:09 | INFO | server | server:193 | get_audit_logs called: limit=10
+2026-07-05 23:46:09 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:46:09 | INFO | tools.audit | audit:52 | Retrieved 10 audit records
+2026-07-05 23:54:14 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:54:14 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:54:14 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:54:14 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:54:14 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:54:14 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:54:21 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:54:21 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:54:21 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:54:21 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:54:21 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:54:22 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:54:22 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';
+2026-07-05 23:54:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:54:22 | ERROR | tools.query | query:25 | Query failed: (sqlite3.OperationalError) no such table: Order Details
+[SQL: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:55:21 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:21 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:21 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:21 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:21 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:21 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:37 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:37 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:37 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:38 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:38 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:38 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:42 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:42 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:42 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:42 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:47 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:47 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:47 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:47 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:47 | INFO | server | server:171 | explain_sql called: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';
+2026-07-05 23:55:52 | INFO | tools.query | query:39 | Explained query: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+2026-07-05 23:55:57 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:57 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:57 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:57 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:57 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:57 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:59 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:55:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:59 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:55:59 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:55:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:55:59 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:55:59 | INFO | server | server:178 | preview_write_operation called: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';
+2026-07-05 23:55:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:10 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:56:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:10 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:56:10 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:56:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:10 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:56:10 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';
+2026-07-05 23:56:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:10 | ERROR | tools.query | query:25 | Query failed: (sqlite3.OperationalError) no such table: Order Details
+[SQL: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-05 23:56:46 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:56:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:46 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:56:46 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:56:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:46 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:56:48 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:56:48 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:48 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:56:48 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:56:48 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:48 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:56:48 | INFO | server | server:164 | run_read_query called: SELECT name
+FROM sqlite_master
+WHERE type = 'table';
+2026-07-05 23:56:49 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:56:49 | INFO | tools.query | query:22 | Query executed: SELECT name
+FROM sqlite_master
+WHERE type = 'table';
+2026-07-05 23:57:20 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:57:20 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:20 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:57:20 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:57:20 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:20 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:57:22 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:57:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:22 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:57:22 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:57:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:22 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:57:22 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-05 23:57:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:23 | INFO | tools.query | query:22 | Query executed: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN order
+2026-07-05 23:57:36 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:57:36 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:36 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:57:36 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:57:36 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:36 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:57:36 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-05 23:57:36 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:37 | INFO | tools.query | query:22 | Query executed: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN order
+2026-07-05 23:57:41 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:57:41 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:41 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:57:41 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:57:41 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:41 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:57:46 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:57:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:46 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:57:46 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:57:46 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:57:47 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:57:47 | INFO | server | server:171 | explain_sql called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-05 23:57:49 | INFO | tools.query | query:39 | Explained query: SELECT DISTINCT
+    p.productCode,
+    p.productNa
+2026-07-05 23:59:09 | INFO | server | server:58 | ask_database called: Find all products ordered by customers from Germany
+2026-07-05 23:59:09 | INFO | classify | classify:20 | Classifying question: Find all products ordered by customers from Germany
+2026-07-05 23:59:09 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-05 23:59:09 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find all products ordered by customers from Germany
+2026-07-05 23:59:09 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:10 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT DISTINCT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-05 23:59:10 | INFO | validate | validate:12 | Validating SQL: SELECT DISTINCT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-05 23:59:10 | INFO | validate | validate:37 | SQL validation passed
+2026-07-05 23:59:10 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-05 23:59:10 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:10 | INFO | execute | execute:56 | Executing SQL: SELECT DISTINCT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-05 23:59:10 | INFO | execute | execute:69 | Execution complete in 11ms
+2026-07-05 23:59:10 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-05 23:59:12 | INFO | summarize | summarize:37 | Summary generated: It looks like you've successfully found all the unique products that have been ordered by customers ...
+2026-07-05 23:59:12 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:59:12 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find all products ordered by customers from German
+2026-07-05 23:59:12 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:59:12 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:12 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:59:12 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:59:12 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:12 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:59:27 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:59:27 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:27 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:59:27 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:59:27 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:27 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-05 23:59:28 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-05 23:59:28 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:28 | INFO | tools.query | query:22 | Query executed: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN order
+2026-07-05 23:59:51 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-05 23:59:51 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-05 23:59:51 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-05 23:59:51 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-05 23:59:51 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:51 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE office;
+2026-07-05 23:59:51 | INFO | validate | validate:12 | Validating SQL: DROP TABLE office;
+2026-07-05 23:59:51 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-05 23:59:51 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE office; | Error: DROP operations are blocked
+2026-07-05 23:59:51 | INFO | db | db:15 | Connecting to Audit database
+2026-07-05 23:59:51 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | delete office table
+2026-07-05 23:59:52 | INFO | server | server:140 | get_database_schema called: employees
+2026-07-05 23:59:52 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:52 | INFO | tools.schema | schema:23 | Retrieved schema for: employees
+2026-07-05 23:59:52 | INFO | server | server:157 | describe_database_table called: employees
+2026-07-05 23:59:52 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-05 23:59:52 | INFO | tools.schema | schema:31 | Described table: employees
+2026-07-06 00:00:03 | INFO | server | server:58 | ask_database called: Update product prices by 10%
+2026-07-06 00:00:03 | INFO | classify | classify:20 | Classifying question: Update product prices by 10%
+2026-07-06 00:00:03 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-06 00:00:03 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Update product prices by 10%
+2026-07-06 00:00:03 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:00:04 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-06 00:00:04 | INFO | validate | validate:12 | Validating SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-06 00:00:04 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:00:04 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-06 00:00:04 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:00:05 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:00:05 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:00:05 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:00:05 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:00:05 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:00:05 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:01:58 | INFO | server | server:58 | ask_database called: List all products ordered by customers from Germany
+2026-07-06 00:01:58 | INFO | classify | classify:20 | Classifying question: List all products ordered by customers from Germany
+2026-07-06 00:01:58 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:01:58 | INFO | generate_sql | generate_sql:20 | Generating SQL for: List all products ordered by customers from Germany
+2026-07-06 00:01:58 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:01:59 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:01:59 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:01:59 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:01:59 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:01:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:01:59 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:01:59 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-06 00:01:59 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:02:03 | INFO | summarize | summarize:37 | Summary generated: Sure! Based on your query, it looks like you've compiled a list of all products that were ordered by...
+2026-07-06 00:02:03 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:02:03 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | List all products ordered by customers from German
+2026-07-06 00:02:17 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-06 00:02:17 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-06 00:02:17 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-06 00:02:17 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-06 00:02:17 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:02:18 | INFO | generate_sql | generate_sql:38 | Generated SQL: DELETE FROM office;
+2026-07-06 00:02:18 | INFO | validate | validate:12 | Validating SQL: DELETE FROM office;
+2026-07-06 00:02:18 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:02:18 | INFO | risk | risk:21 | Operation: DELETE | Risk: HIGH
+2026-07-06 00:02:18 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-06 00:02:26 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-14, by=streamlit_user
+2026-07-06 00:02:26 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-06 00:02:26 | INFO | approval | approval:36 | Operation approved by streamlit_user, token: 5043d33f-2cb6-4ef2-a1ae-6eb850639a9e
+2026-07-06 00:02:26 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:02:26 | INFO | execute | execute:47 | Dry run result: [(7,)] rows affected
+2026-07-06 00:02:26 | INFO | execute | execute:56 | Executing SQL: DELETE FROM office;
+2026-07-06 00:02:26 | INFO | execute | execute:69 | Execution complete in 9ms
+2026-07-06 00:02:26 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:02:27 | INFO | summarize | summarize:37 | Summary generated: The `DELETE FROM office` command has been executed successfully. This means all the records in the "...
+2026-07-06 00:02:27 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:02:27 | INFO | tools.audit | audit:34 | Audit logged: DELETE | SUCCESS | delete office table
+2026-07-06 00:03:35 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-06 00:03:35 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-06 00:03:35 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-06 00:03:35 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-06 00:03:35 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:03:36 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE office;
+2026-07-06 00:03:36 | INFO | validate | validate:12 | Validating SQL: DROP TABLE office;
+2026-07-06 00:03:36 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-06 00:03:36 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE office; | Error: DROP operations are blocked
+2026-07-06 00:03:36 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:03:36 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | delete office table
+2026-07-06 00:03:53 | INFO | server | server:58 | ask_database called: Listall products ordered by customers from Germany
+2026-07-06 00:03:53 | INFO | classify | classify:20 | Classifying question: Listall products ordered by customers from Germany
+2026-07-06 00:03:53 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:03:53 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Listall products ordered by customers from Germany
+2026-07-06 00:03:53 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:03:54 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:03:54 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:03:54 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:03:54 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:03:54 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:03:54 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:03:54 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-06 00:03:54 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:03:56 | INFO | summarize | summarize:37 | Summary generated: Sure! Based on the query you executed, it appears that a variety of different vehicles and items wer...
+2026-07-06 00:03:56 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:03:56 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Listall products ordered by customers from Germany
+2026-07-06 00:04:05 | INFO | server | server:58 | ask_database called: List all products ordered by customers from Germany
+2026-07-06 00:04:05 | INFO | classify | classify:20 | Classifying question: List all products ordered by customers from Germany
+2026-07-06 00:04:05 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:04:05 | INFO | generate_sql | generate_sql:20 | Generating SQL for: List all products ordered by customers from Germany
+2026-07-06 00:04:05 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:07 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:07 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:07 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:04:07 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:04:07 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:07 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName FROM products AS p JOIN orderdetails AS od ON p.productCode = od.productCode JOIN orders AS o ON od.orderNumber = o.orderNumber JOIN customers AS c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:07 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-06 00:04:07 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:04:09 | INFO | summarize | summarize:37 | Summary generated: Oh hello there! It looks like you're looking for all the cool stuff that people from Germany have or...
+2026-07-06 00:04:09 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:04:09 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | List all products ordered by customers from German
+2026-07-06 00:04:16 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-06 00:04:16 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-06 00:04:17 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-06 00:04:17 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-06 00:04:17 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:17 | INFO | generate_sql | generate_sql:38 | Generated SQL: DELETE FROM office;
+2026-07-06 00:04:17 | INFO | validate | validate:12 | Validating SQL: DELETE FROM office;
+2026-07-06 00:04:17 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:04:17 | INFO | risk | risk:21 | Operation: DELETE | Risk: HIGH
+2026-07-06 00:04:17 | INFO | approval | approval:15 | Requesting approval for HIGH risk operation
+2026-07-06 00:04:30 | INFO | server | server:58 | ask_database called: Update product prices by 10%
+2026-07-06 00:04:30 | INFO | classify | classify:20 | Classifying question: Update product prices by 10%
+2026-07-06 00:04:31 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-06 00:04:31 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Update product prices by 10%
+2026-07-06 00:04:31 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:32 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-06 00:04:32 | INFO | validate | validate:12 | Validating SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10
+2026-07-06 00:04:32 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:04:32 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-06 00:04:32 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:04:42 | INFO | server | server:58 | ask_database called: Find all products ordered by customers from Germany
+2026-07-06 00:04:42 | INFO | classify | classify:20 | Classifying question: Find all products ordered by customers from Germany
+2026-07-06 00:04:42 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:04:42 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find all products ordered by customers from Germany
+2026-07-06 00:04:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:43 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:43 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:43 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:04:43 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:04:43 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:43 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName FROM products p JOIN orderdetails od ON p.productCode = od.productCode JOIN orders o ON od.orderNumber = o.orderNumber JOIN customers c ON o.customerNumber = c.customerNumber WHERE c.country = 'Germany'
+2026-07-06 00:04:43 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-06 00:04:43 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:04:45 | INFO | summarize | summarize:37 | Summary generated: Hi there! It looks like you've found all the products that have been ordered by customers from Germa...
+2026-07-06 00:04:45 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:04:45 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find all products ordered by customers from German
+2026-07-06 00:04:49 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-06 00:04:49 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-06 00:04:50 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-06 00:04:50 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-06 00:04:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:04:51 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE office;
+2026-07-06 00:04:51 | INFO | validate | validate:12 | Validating SQL: DROP TABLE office;
+2026-07-06 00:04:51 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-06 00:04:51 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE office; | Error: DROP operations are blocked
+2026-07-06 00:04:51 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:04:51 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | delete office table
+2026-07-06 00:05:24 | INFO | server | server:58 | ask_database called: update product prices by 10%
+2026-07-06 00:05:24 | INFO | classify | classify:20 | Classifying question: update product prices by 10%
+2026-07-06 00:05:25 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-06 00:05:25 | INFO | generate_sql | generate_sql:20 | Generating SQL for: update product prices by 10%
+2026-07-06 00:05:25 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:26 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:05:26 | INFO | validate | validate:12 | Validating SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:05:26 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:05:26 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-06 00:05:26 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:05:31 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-22, by=streamlit_user
+2026-07-06 00:05:31 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:05:31 | INFO | approval | approval:36 | Operation approved by streamlit_user, token: ccbf570e-5ec0-4c72-9b2f-a8d9d506ff0e
+2026-07-06 00:05:31 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:31 | INFO | execute | execute:47 | Dry run result: [(110,)] rows affected
+2026-07-06 00:05:31 | INFO | execute | execute:56 | Executing SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:05:31 | INFO | execute | execute:69 | Execution complete in 17ms
+2026-07-06 00:05:31 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:05:32 | INFO | summarize | summarize:37 | Summary generated: Hey there! The update you ran increased all product prices by 10%. Now, each item in your products t...
+2026-07-06 00:05:32 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:05:32 | INFO | tools.audit | audit:34 | Audit logged: UPDATE | SUCCESS | update product prices by 10%
+2026-07-06 00:05:39 | INFO | server | server:149 | get_tables called
+2026-07-06 00:05:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:39 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-06 00:05:40 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:05:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:40 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:05:40 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:05:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:40 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:05:47 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:05:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:47 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:05:47 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:05:47 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:47 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:05:50 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:05:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:50 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:05:50 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:05:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:50 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:05:50 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';
+2026-07-06 00:05:50 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:05:50 | ERROR | tools.query | query:25 | Query failed: (sqlite3.OperationalError) no such table: Order Details
+[SQL: SELECT DISTINCT
+    p.ProductID,
+    p.ProductName
+FROM Customers c
+INNER JOIN Orders o
+    ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od
+    ON o.OrderID = od.OrderID
+INNER JOIN Products p
+    ON od.ProductID = p.ProductID
+WHERE c.Country = 'Germany';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-06 00:06:40 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:06:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:06:40 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:06:40 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:06:40 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:06:40 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:06:42 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:06:42 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:06:43 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:06:43 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:06:43 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:06:43 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:06:43 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-06 00:06:43 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:06:43 | INFO | tools.query | query:22 | Query executed: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN order
+2026-07-06 00:07:20 | INFO | server | server:58 | ask_database called: Find all products ordered by customers from Germany
+2026-07-06 00:07:20 | INFO | classify | classify:20 | Classifying question: Find all products ordered by customers from Germany
+2026-07-06 00:07:20 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:07:20 | INFO | generate_sql | generate_sql:20 | Generating SQL for: Find all products ordered by customers from Germany
+2026-07-06 00:07:20 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:07:22 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:07:22 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:07:22 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:07:22 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:07:22 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:07:22 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName 
+FROM products p 
+JOIN orderdetails od ON p.productCode = od.productCode 
+JOIN orders o ON od.orderNumber = o.orderNumber 
+JOIN customers c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany';
+2026-07-06 00:07:22 | INFO | execute | execute:69 | Execution complete in 9ms
+2026-07-06 00:07:22 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:07:23 | INFO | summarize | summarize:37 | Summary generated: Hey there! It looks like you found all the products that customers from Germany have ordered. That's...
+2026-07-06 00:07:23 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:07:23 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | Find all products ordered by customers from German
+2026-07-06 00:07:34 | INFO | server | server:58 | ask_database called: List all products ordered by customers from Germany
+2026-07-06 00:07:34 | INFO | classify | classify:20 | Classifying question: List all products ordered by customers from Germany
+2026-07-06 00:07:34 | INFO | classify | classify:31 | Classification result: SELECT
+2026-07-06 00:07:34 | INFO | generate_sql | generate_sql:20 | Generating SQL for: List all products ordered by customers from Germany
+2026-07-06 00:07:34 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:07:36 | INFO | generate_sql | generate_sql:38 | Generated SQL: SELECT p.productName 
+FROM products AS p 
+JOIN orderdetails AS od ON p.productCode = od.productCode 
+JOIN orders AS o ON od.orderNumber = o.orderNumber 
+JOIN customers AS c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany'
+2026-07-06 00:07:36 | INFO | validate | validate:12 | Validating SQL: SELECT p.productName 
+FROM products AS p 
+JOIN orderdetails AS od ON p.productCode = od.productCode 
+JOIN orders AS o ON od.orderNumber = o.orderNumber 
+JOIN customers AS c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany'
+2026-07-06 00:07:36 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:07:36 | INFO | risk | risk:21 | Operation: SELECT | Risk: SAFE
+2026-07-06 00:07:36 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:07:36 | INFO | execute | execute:56 | Executing SQL: SELECT p.productName 
+FROM products AS p 
+JOIN orderdetails AS od ON p.productCode = od.productCode 
+JOIN orders AS o ON od.orderNumber = o.orderNumber 
+JOIN customers AS c ON o.customerNumber = c.customerNumber 
+WHERE c.country = 'Germany'
+2026-07-06 00:07:36 | INFO | execute | execute:69 | Execution complete in 10ms
+2026-07-06 00:07:36 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:07:37 | INFO | summarize | summarize:37 | Summary generated: Sure! Here's a list of products that have been ordered by customers from Germany. This includes ever...
+2026-07-06 00:07:37 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:07:37 | INFO | tools.audit | audit:34 | Audit logged: SELECT | SUCCESS | List all products ordered by customers from German
+2026-07-06 00:07:48 | INFO | server | server:58 | ask_database called: delete office table
+2026-07-06 00:07:48 | INFO | classify | classify:20 | Classifying question: delete office table
+2026-07-06 00:07:49 | INFO | classify | classify:31 | Classification result: DELETE
+2026-07-06 00:07:49 | INFO | generate_sql | generate_sql:20 | Generating SQL for: delete office table
+2026-07-06 00:07:49 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:07:50 | INFO | generate_sql | generate_sql:38 | Generated SQL: DROP TABLE IF EXISTS office;
+2026-07-06 00:07:50 | INFO | validate | validate:12 | Validating SQL: DROP TABLE IF EXISTS office;
+2026-07-06 00:07:50 | WARNING | validate | validate:29 | BLOCKED operation detected: DROP
+2026-07-06 00:07:50 | ERROR | error_handler | error_handler:11 | Error in pipeline | Operation: DROP | SQL: DROP TABLE IF EXISTS office; | Error: DROP operations are blocked
+2026-07-06 00:07:50 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:07:50 | INFO | tools.audit | audit:34 | Audit logged: DROP | ERROR | delete office table
+2026-07-06 00:08:32 | INFO | server | server:58 | ask_database called: update product prices by 10%
+2026-07-06 00:08:32 | INFO | classify | classify:20 | Classifying question: update product prices by 10%
+2026-07-06 00:08:33 | INFO | classify | classify:31 | Classification result: UPDATE
+2026-07-06 00:08:33 | INFO | generate_sql | generate_sql:20 | Generating SQL for: update product prices by 10%
+2026-07-06 00:08:33 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:34 | INFO | generate_sql | generate_sql:38 | Generated SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:08:34 | INFO | validate | validate:12 | Validating SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:08:34 | INFO | validate | validate:37 | SQL validation passed
+2026-07-06 00:08:34 | INFO | risk | risk:21 | Operation: UPDATE | Risk: MEDIUM
+2026-07-06 00:08:34 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:08:39 | INFO | server | server:104 | approve_operation called: thread=mcp-thread-26, by=streamlit_user
+2026-07-06 00:08:39 | INFO | approval | approval:15 | Requesting approval for MEDIUM risk operation
+2026-07-06 00:08:39 | INFO | approval | approval:36 | Operation approved by streamlit_user, token: 808b511c-627b-4ebb-9f03-92f0066653bb
+2026-07-06 00:08:39 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:39 | INFO | execute | execute:47 | Dry run result: [(110,)] rows affected
+2026-07-06 00:08:39 | INFO | execute | execute:56 | Executing SQL: UPDATE products SET buyPrice = buyPrice * 1.10, MSRP = MSRP * 1.10;
+2026-07-06 00:08:39 | INFO | execute | execute:69 | Execution complete in 18ms
+2026-07-06 00:08:39 | INFO | summarize | summarize:32 | Generating natural language summary
+2026-07-06 00:08:40 | INFO | summarize | summarize:37 | Summary generated: The product prices have been successfully updated by 10%. This means that each product's buying pric...
+2026-07-06 00:08:40 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:08:40 | INFO | tools.audit | audit:34 | Audit logged: UPDATE | SUCCESS | update product prices by 10%
+2026-07-06 00:08:48 | INFO | server | server:149 | get_tables called
+2026-07-06 00:08:48 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:48 | INFO | tools.schema | schema:11 | Listed tables: ['customers', 'dummy', 'employees', 'office', 'orderdetails', 'orders', 'payments', 'productlines', 'products']
+2026-07-06 00:08:48 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:08:48 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:48 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:08:48 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:08:48 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:48 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:08:56 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:08:56 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:56 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:08:56 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:08:56 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:57 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:08:58 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:08:58 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:58 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:08:58 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:08:58 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:58 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:08:59 | INFO | server | server:164 | run_read_query called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-06 00:08:59 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:08:59 | INFO | tools.query | query:22 | Query executed: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN order
+2026-07-06 00:09:03 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:09:03 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:03 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:09:04 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:09:04 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:04 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:09:05 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:09:05 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:05 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:09:05 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:09:05 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:05 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:09:05 | INFO | server | server:171 | explain_sql called: SELECT DISTINCT
+    p.productCode,
+    p.productName
+FROM customers c
+JOIN orders o
+    ON c.customerNumber = o.customerNumber
+JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+JOIN products p
+    ON od.productCode = p.productCode
+WHERE c.country = 'Germany';
+2026-07-06 00:09:09 | INFO | tools.query | query:39 | Explained query: SELECT DISTINCT
+    p.productCode,
+    p.productNa
+2026-07-06 00:09:16 | INFO | server | server:140 | get_database_schema called: customers
+2026-07-06 00:09:16 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:16 | INFO | tools.schema | schema:23 | Retrieved schema for: customers
+2026-07-06 00:09:16 | INFO | server | server:157 | describe_database_table called: customers
+2026-07-06 00:09:16 | INFO | db | db:10 | Connecting to Northwind database
+2026-07-06 00:09:16 | INFO | tools.schema | schema:31 | Described table: customers
+2026-07-06 00:09:16 | INFO | server | server:193 | get_audit_logs called: limit=10
+2026-07-06 00:09:16 | INFO | db | db:15 | Connecting to Audit database
+2026-07-06 00:09:16 | INFO | tools.audit | audit:52 | Retrieved 10 audit records
